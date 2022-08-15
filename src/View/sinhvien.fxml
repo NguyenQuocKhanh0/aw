@@ -3,13 +3,10 @@
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.FlowPane?>
-<?import javafx.scene.layout.Pane?>
 
-<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="478.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
+<FlowPane id="flow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="478.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainSceneController">
    <children>
-      <Pane prefHeight="404.0" prefWidth="200.0">
+      <Pane id="flowpanee" prefHeight="404.0" prefWidth="200.0">
          <children>
             <Button layoutX="23.0" layoutY="30.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="154.0" text="Màn hình chính" />
             <Button id="SVButton" layoutX="23.0" layoutY="104.0" mnemonicParsing="false" onMouseClicked="#SinhVienProcess" prefHeight="60.0" prefWidth="154.0" text="Quản Lý Học Viên" />
@@ -18,14 +15,9 @@
             <Button layoutX="23.0" layoutY="330.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="154.0" text="Thống kê" />
          </children>
       </Pane>
-      <Pane prefHeight="404.0" prefWidth="276.0">
+      <Pane id="pane" prefHeight="404.0" prefWidth="276.0">
          <children>
-            <TableView layoutX="14.0" layoutY="57.0" prefHeight="200.0" prefWidth="200.0">
-              <columns>
-                <TableColumn prefWidth="75.0" text="C1" />
-                <TableColumn prefWidth="75.0" text="C2" />
-              </columns>
-            </TableView>
+            <TableView id="table" layoutX="14.0" layoutY="57.0" prefHeight="200.0" prefWidth="200.0" />
          </children></Pane>
    </children>
 </FlowPane>

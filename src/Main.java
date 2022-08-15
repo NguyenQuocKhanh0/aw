@@ -1,4 +1,5 @@
 
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,7 +9,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("qlsv1.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/qlsv1.fxml"));
         primaryStage.setTitle("QLSV");
         Parent root = loader.load();
         Scene scene = new Scene(root);

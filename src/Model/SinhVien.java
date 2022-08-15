@@ -63,6 +63,16 @@ public class SinhVien {
 	public void setTinhTrang(Boolean tinhTrang) {
 		TinhTrang = tinhTrang;
 	}
+	public SinhVien( int iD, String name, String sDT, String birthday,Boolean gT, String diaChi, Boolean tinhTrang) {
+super();
+Name = name;
+SDT = sDT;
+Birthday = birthday;
+GT = gT;
+DiaChi = diaChi;
+TinhTrang = tinhTrang;
+ID = iD;
+}
 
 
 }
